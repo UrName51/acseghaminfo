@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forum Page</title>
+    <style>
+        /* Add your CSS styles here */
+        .post {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .comment {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forum Page</h1>
+
+    <!-- Create a form for posting -->
+    <form id="post-form">
+        <label for="post-content">Post something:</label><br>
+        <textarea id="post-content" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Post">
+    </form>
+
+    <!-- Create a container for posts -->
+    <div id="posts-container"></div>
+
+    <script>
+        // Initialize posts and comments
+        let posts = [];
+
+        // Function to render posts and comments
+        function renderPosts() {
+            const postsContainer = document.getElementById('posts-container');
+            postsContainer.innerHTML = '';
+
+            posts.forEach((post, postIndex) => {
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post');
+                postDiv.innerHTML = post.content;
+
+                // Create a form for posting comments
+                const commentForm = document.createElement('form');
+                commentForm.innerHTML = `
+                    <label for="comment-content-${postIndex}">Comment:</label><br>
+                    <textarea id="comment-content-${postIndex}" rows="2" cols="40"></textarea><br>
+                    <input type="submit" value="Comment">
+                `;
+
+                // Add an event listener to handle comment submission
+                commentForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    const commentContent = document.getElementById(`comment-content-${postIndex}`).value;
+                    if (commentContent.trim() !== '') {
+                        post.comments.push(commentContent);
+                        renderPosts();
+                    }
+                });
+
+                // Render comments for the post
+                post.comments.forEach((comment, commentIndex) => {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.classList.add('comment');
+                    commentDiv.innerHTML = comment;
+                    commentForm.appendChild(commentDiv);
+                });
+
+                postDiv.appendChild(commentForm);
+                postsContainer.appendChild(postDiv);
+            });
+        }
+
+        // Add an event listener to handle post submission
+        const postForm = document.getElementById('post-form');
+        postForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const postContent = document.getElementById('post-content').value;
+            if (postContent.trim() !== '') {
+                posts.push({ content: postContent, comments: [] });
+                document.getElementById('post-content').value = '';
+                renderPosts();
+            }
+        });
+
+        // Render posts on page load
+        renderPosts();
+    </script>
+</body>
+</html>

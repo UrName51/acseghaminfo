@@ -1,0 +1,775 @@
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+max-width: 893px;
+min-height: 738px;
+box-shadow: #000000;
+border-radius: 12px;
+box-shadow: 0 4px 8px #000000;
+background-color: #ffffff;
+font-family: Arial Rounded MT Bold;
+}
+
+.container2{
+padding: 16px 16px;
+box-shadow: #000000;
+border-radius: 12px;
+box-shadow: 0 4px 8px #000000;
+background-color: #ffffff;
+font-family: Arial Rounded MT Bold;
+height: 650px;
+width: 40%;
+color: #001e6e;
+}
+.container3{
+  padding: 16px 16px;
+  box-shadow: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #000000;
+  background-color: #ffffff;
+  font-family: Arial Rounded MT Bold;
+  height: 300px;
+  width: 40%;
+  color: #001e6e;
+  text-align: center;
+  overflow: scroll;
+  }
+
+.container4{
+  padding: 16px 16px;
+  box-shadow: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #000000;
+  background-color: #ffffff;
+  font-family: Arial Rounded MT Bold;
+  height: 260px;
+  width: 40%;
+  color: #001e6e;
+  text-align: center;
+}
+
+.button {
+  color: #001e6e;
+  text-align: center;
+  padding: 8px 8px;
+  font-size: 20px;
+  overflow: hidden;
+  background-color: #F59B01;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px #001e6e;
+}
+
+.button:hover {
+  overflow: hidden;
+  background-color: #ffbb45
+}
+
+.button:active {
+  overflow: hidden;
+  background-color: #F59B01;
+  box-shadow: 0 3px #001e6e;
+  transform: translateY(4px);
+  
+
+}
+
+.button2 {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: "oodlee";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 60px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.mansion {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.mansion span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.mansion span:after {
+  content: "ansion";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.mansion:hover span {
+  padding-right: 60px;
+}
+
+.mansion:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.magnolia {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.magnolia span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.magnolia span:after {
+  content: "agnolia";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.magnolia:hover span {
+  padding-right: 65px;
+}
+
+.magnolia:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.cafeteria {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.cafeteria span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cafeteria span:after {
+  content: "afeteria";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.cafeteria:hover span {
+  padding-right: 67px;
+}
+
+.cafeteria:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.student {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.student span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.student span:after {
+  content: "tudent Center";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.student:hover span {
+  padding-right: 121px;
+}
+
+.student:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.maple {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.maple span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.maple span:after {
+  content: "aple";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.maple:hover span {
+  padding-right: 40px;
+}
+
+.maple:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.lake {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.lake span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.lake span:after {
+  content: "ake";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.lake:hover span {
+  padding-right: 32px;
+}
+
+.lake:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.savil {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.savil span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.savil span:after {
+  content: "avill";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.savil:hover span {
+  padding-right: 34px;
+}
+
+.savil:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cedar {
+  border-radius: 15px;
+  background-color: #F59B01;
+  border: none;
+  color: #001e6e;
+  text-align: left;
+  font-size: 20px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px #001e6e;
+  animation: pulse 2s infinite;
+}
+
+.cedar span {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cedar span:after {
+  content: "edar";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.cedar:hover span {
+  padding-right: 40px;
+}
+
+.cedar:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.title {
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #F59B01;
+  overflow: hidden;
+  background-color: #001e6e;
+}
+.title2 {
+  font-size: 50px;
+  cursor: pointer;
+  outline: none;
+  color: #F59B01;
+  overflow: hidden;
+  background-color: #001e6e;
+}
+
+.space {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #F59B01;
+    overflow: hidden;
+    background-color: #F59B01;
+    
+    
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #ffffff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.topnav a:hover {
+  background-color: #a8a8a8;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: orange; }
+  100% { color: purple; }
+}
+
+.changing-text {
+  animation: colorChange 5s infinite; 
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.15);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.background {
+ opacity: 0.5
+}
+
+
+.container5 {
+  max-width: 300px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container6 {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.scalemayo {
+  width: 93%;
+  height: 93%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #818182;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #939393;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container7 {
+  width: 90%;
+  min-height: 75px;
+  margin: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.container8 {
+  width: 90%;
+  min-height: auto;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.postBox{
+  color: #001e6e;
+  padding: 8px 8px;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: 2px;
+  border: 2px;
+  border-width: 2px;
+border-style: solid;
+border-color: #001e6e;
+}
+
+.post {
+  color: #001e6e;
+  text-align: center;
+  padding: 8px 8px;
+  margin: 6px;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  float: right;
+}
+
+.confirm {
+  color: #001e6e;
+  text-align: center;
+  padding: 4px 8px;
+  font-size: 12px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  float: right;
+}
+
+.post-container {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.post-content {
+  flex-grow: 1;
+  
+}
+
+.comments-container {
+  display: none;
+  
+}
+
+.comment {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 5px;
+  float: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c9c9c9;
+  border-radius: 15px;
+}
+
+.comment-button {
+  color: #001e6e;
+  text-align: center;
+  padding: 8px 8px;
+  margin: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  float: right;
+}
+
+.view-comments-button {
+  color: #001e6e;
+  text-align: center;
+  padding: 8px 8px;
+  margin: 2px;
+  font-size: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  float: right;
+}
+
+.virtualtourbutton{
+  color: #001e6e;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 25px;
+  overflow: hidden;
+  background-color: #F59B01;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 0 5px #001e6e;
+  margin: 20px;
+}
+
+.virtualtourbutton:hover {
+  overflow: hidden;
+  background-color: #ffbb45
+}
+
+.virtualtourbutton:active {
+  overflow: hidden;
+  background-color: #F59B01;
+  box-shadow: 0 3px #001e6e;
+  transform: translateY(4px);
+  
+
+}
+
+.infotext{
+  text-align: justify;
+
+}
+
+.jaguar{
+  max-width: 250px;
+  min-height: 88px;
+  text-align: justify;
+}
